@@ -1,0 +1,107 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.hamilton-title{
+  padding-bottom: 0em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-section{
+  padding-top: 0.5em;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+  
+}
+
+.title-text{
+    padding-top: 5%;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    font-size: 6rem;
+    font-weight: 600;
+
+}
+
+.hamilton-text{
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    font-weight: 900;
+    overflow: hidden;
+    margin: auto;
+    animation: openclose 3s ease-in ;
+}
+
+
+.container .card {
+  position: relative;
+  width: 300px;
+  min-height: 300px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.container .card .box {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: #ececec;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s;
+  width: 260px;
+  height: 260px;
+}
+
+.container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.react-horizontal-scrolling-menu--arrow-left{
+  align-items: center;
+}
+
+.react-horizontal-scrolling-menu--arrow-right{
+  align-items: center;
+}
+
+@keyframes openclose {
+    0% {
+      width: 0;
+    }
+    
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+
+  }
+
+  
